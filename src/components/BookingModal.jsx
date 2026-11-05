@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { companyInfo, karnatakaDistricts, vehicleRates } from "../data";
 
 export default function BookingModal({ isOpen, onClose, preset = {} }) {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { navLinks, companyInfo } from "../data";
 
 export default function Header({ onOpenBooking }) {

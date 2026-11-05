@@ -1,3 +1,4 @@
+import React from "react";
 import { companyInfo } from "../data";
 
 export default function About({ onOpenBooking, onOpenPhoto }) {

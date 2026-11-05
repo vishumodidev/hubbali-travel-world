@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { testimonials } from "../data";
 
 const perViewFor = () => (typeof window !== "undefined" && window.innerWidth <= 900 ? 1 : 3);

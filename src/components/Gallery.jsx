@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { galleryPhotos } from "../data";
 
 export default function Gallery({ onSelectPhoto }) {

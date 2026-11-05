@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import useReveal from "./hooks/useReveal";
 import { galleryPhotos } from "./data";
 import Header from "./components/Header";

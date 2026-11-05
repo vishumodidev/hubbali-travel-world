@@ -1,3 +1,4 @@
+import React from "react";
 import { whyItems } from "../data";
 
 export default function WhyUs() {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { fleet, companyInfo, karnatakaDistricts, vehicleRates } from "../data";
 
 export default function Fleet({ onOpenBooking, onOpenPhoto }) {

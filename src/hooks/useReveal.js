@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 /**
  * Adds the "in" class to every .reveal element inside the ref'd container once it scrolls into view.
