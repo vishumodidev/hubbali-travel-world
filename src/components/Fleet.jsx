@@ -13,7 +13,7 @@ export default function Fleet({ onOpenBooking, onOpenPhoto }) {
     return vehicleRates[3]; // tempo traveler (Rs.22/km)
   };
 
-  const selectedVeh = getVehicleForCount(calcPeople);
+  const selectedVeh = getVehicleForCount(calcPeople) || vehicleRates[0];
 
   const handleFleetInquiry = (item) => {
     const text = `Hello Hubbali Travel World! 👋%0A%0AI would like to inquire about booking: *${item.title}* (${item.pricing}). Please share available vehicle options for my travel dates.`;

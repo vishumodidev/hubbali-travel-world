@@ -14,7 +14,7 @@ export default function Hero({ onOpenBooking, onOpenPhoto }) {
     return vehicleRates[3]; // tempo traveler (Rs.22/km)
   };
 
-  const currentVehicle = getVehicleForPeople(people);
+  const currentVehicle = getVehicleForPeople(people) || vehicleRates[0];
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
