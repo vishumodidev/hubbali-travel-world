@@ -1,8 +1,8 @@
 export const companyInfo = {
   name: "Hubbali Travel World",
   phone: "+91 63606 12345",
-  phoneRaw: "+916360612345",
-  whatsapp: "+916360612345",
+  phoneRaw: "++918105712525",
+  whatsapp: "++918105712525",
   email: "hubbalitravelworld@gmail.com",
   address: "Near Railway Station / Airport Road, Hubballi, Karnataka 580020",
   tagline: "Explore • Experience • Create Memories",
