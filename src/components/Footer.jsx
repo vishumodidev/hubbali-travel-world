@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { companyInfo } from "../data";
+import {
+  InstagramIcon,
+  FacebookIcon,
+  WhatsAppIcon,
+  MapPinIcon,
+  GoogleGIcon,
+} from "./SocialIcons";
 
 export default function Footer({ onOpenBooking }) {
   const [showTop, setShowTop] = useState(false);
@@ -39,13 +46,45 @@ export default function Footer({ onOpenBooking }) {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="WhatsApp"
+                  title="Chat on WhatsApp"
+                  className="soc-btn soc-wa"
                 >
-                  ✆
+                  <WhatsAppIcon size={18} />
                 </a>
-                <a href={`tel:${companyInfo.phoneRaw}`} aria-label="Phone">
+                <a
+                  href={companyInfo.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  title="Follow us on Instagram @hubbalitravelworld"
+                  className="soc-btn soc-ig"
+                >
+                  <InstagramIcon size={18} />
+                </a>
+                <a
+                  href={companyInfo.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  title="Connect on Facebook"
+                  className="soc-btn soc-fb"
+                >
+                  <FacebookIcon size={18} />
+                </a>
+                <a
+                  href={`tel:${companyInfo.phoneRaw}`}
+                  aria-label="Phone"
+                  title={`Call ${companyInfo.phone}`}
+                  className="soc-btn soc-phone"
+                >
                   📞
                 </a>
-                <a href={`mailto:${companyInfo.email}`} aria-label="Email">
+                <a
+                  href={`mailto:${companyInfo.email}`}
+                  aria-label="Email"
+                  title={`Email ${companyInfo.email}`}
+                  className="soc-btn soc-email"
+                >
                   ✉
                 </a>
                 <a
@@ -54,8 +93,9 @@ export default function Footer({ onOpenBooking }) {
                   rel="noopener noreferrer"
                   aria-label="Location on Google Maps"
                   title="View Hubbali Travel World on Google Maps"
+                  className="soc-btn soc-map"
                 >
-                  📍
+                  <MapPinIcon size={18} />
                 </a>
               </div>
             </div>
@@ -113,6 +153,49 @@ export default function Footer({ onOpenBooking }) {
                   <div>
                     <small>Email Support</small>
                     <a href={`mailto:${companyInfo.email}`}>{companyInfo.email}</a>
+                  </div>
+                </div>
+
+                <div className="f-contact-item">
+                  <span className="icon">⭐</span>
+                  <div>
+                    <small>Google Verified Rating</small>
+                    <a
+                      href={companyInfo.googleReviewUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="google-footer-link"
+                      style={{ color: "#ffb703", textDecoration: "none", fontWeight: "600", display: "inline-flex", alignItems: "center", gap: "6px" }}
+                    >
+                      <GoogleGIcon size={16} />
+                      <span>{companyInfo.rating} ★ ({companyInfo.reviewsCount} Google Reviews)</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="f-contact-item">
+                  <span className="icon">🌐</span>
+                  <div>
+                    <small>Follow on Social Media</small>
+                    <div style={{ display: "flex", gap: "10px", marginTop: "3px" }}>
+                      <a
+                        href={companyInfo.instagram}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: "0.85rem", display: "inline-flex", alignItems: "center", gap: "4px" }}
+                      >
+                        <InstagramIcon size={14} /> Instagram
+                      </a>
+                      <span style={{ color: "rgba(255,255,255,0.3)" }}>•</span>
+                      <a
+                        href={companyInfo.facebook}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: "0.85rem", display: "inline-flex", alignItems: "center", gap: "4px" }}
+                      >
+                        <FacebookIcon size={14} /> Facebook
+                      </a>
+                    </div>
                   </div>
                 </div>
 

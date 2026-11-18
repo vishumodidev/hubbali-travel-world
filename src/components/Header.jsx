@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { navLinks, companyInfo } from "../data";
+import { InstagramIcon, FacebookIcon } from "./SocialIcons";
 
 export default function Header({ onOpenBooking }) {
   const [scrolled, setScrolled] = useState(false);
@@ -46,6 +47,27 @@ export default function Header({ onOpenBooking }) {
             >
               Plan Your Trip →
             </button>
+            <div className="mobile-social-bar">
+              <a
+                href={companyInfo.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="mobile-social-link"
+                aria-label="Instagram"
+              >
+                <InstagramIcon size={16} /> Instagram
+              </a>
+              <span className="dot-sep">•</span>
+              <a
+                href={companyInfo.facebook}
+                target="_blank"
+                rel="noreferrer"
+                className="mobile-social-link"
+                aria-label="Facebook"
+              >
+                <FacebookIcon size={16} /> Facebook
+              </a>
+            </div>
           </div>
         </nav>
 
