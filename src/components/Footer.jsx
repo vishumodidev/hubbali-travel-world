@@ -48,6 +48,15 @@ export default function Footer({ onOpenBooking }) {
                 <a href={`mailto:${companyInfo.email}`} aria-label="Email">
                   ✉
                 </a>
+                <a
+                  href={companyInfo.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Location on Google Maps"
+                  title="View Hubbali Travel World on Google Maps"
+                >
+                  📍
+                </a>
               </div>
             </div>
 
@@ -111,7 +120,18 @@ export default function Footer({ onOpenBooking }) {
                   <span className="icon">📍</span>
                   <div>
                     <small>Location & Head Office</small>
-                    <span>{companyInfo.address}</span>
+                    <a
+                      href={companyInfo.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="maps-link"
+                      style={{ color: "inherit", textDecoration: "none", display: "block" }}
+                    >
+                      <span>{companyInfo.address}</span>
+                      <span style={{ display: "block", marginTop: "4px", color: "var(--color-gold, #ffb703)", fontSize: "0.82rem", fontWeight: "600" }}>
+                        📍 Open in Google Maps ↗
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>

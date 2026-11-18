@@ -33,6 +33,16 @@ export default function CTA({ onOpenBooking }) {
               <a href={`tel:${companyInfo.phoneRaw}`} className="btn btn-glass-white">
                 <span>📞 Call {companyInfo.phone}</span>
               </a>
+
+              <a
+                href={companyInfo.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-glass-white"
+                title="View Hubbali Travel World on Google Maps"
+              >
+                <span>📍 View Location on Maps ↗</span>
+              </a>
             </div>
 
             <div className="cta-trust-items">

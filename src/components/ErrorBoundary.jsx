@@ -58,7 +58,7 @@ export default class ErrorBoundary extends React.Component {
                 🔄 Refresh Page
               </button>
               <a
-                href="https://wa.me/+918105712525"
+                href="https://wa.me/918105712525"
                 style={{
                   background: "#25d366",
                   color: "#ffffff",
